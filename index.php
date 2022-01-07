@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <body>
-
-<h1>My first PHP page</h1>
+  <h1>My first PHP page</h1>
+</body>
+</html> 
 
 <?php
 // ECHO "Hello World!<br>";
@@ -21,7 +22,6 @@ lines
 commented
 */
 ?>
-
 <?php
 // $y = 10.5;
 // $age = 22;
@@ -29,21 +29,17 @@ commented
 // // the usage of "." is kinda weird but ok
 // echo "the y ==> " . $y . "  age ==>" . $age . "  AGE ==>" . $AGE ;
 ?>
-
 <?php
 // a lot easier than the one I wrote above
 // $txt = "this be a variable!!!";
 // echo "now $txt";
 ?>
-
 <?php /* $aq = 4;$gq = 6;echo $aq + $gq; */ ?> 
-
 <?php
 // throwing an error as it logically should
 // $aq = 4 + "asd"
 // echo $aqg
 ?> 
-
 <?php
 // $gl = 5; // global scope
 
@@ -57,21 +53,100 @@ commented
 
 // echo "<p>Variable x outside function is: $gl</p>";
 ?> 
-
 <?php
-$x = 5;
-$y = 10;
-
-function myTest() {
-  // to use global variables inside functions
-  global $x, $y;
-  $y = $x + $y;
-}
-
-myTest();
-echo $y; // outputs 15
+// $x = 5;
+// $y = 10;
+// function myTest() {
+//   // to use global variables inside functions
+//   global $x, $y;
+//   $y = $x + $y;
+// }
+// myTest();
+// echo $y; // outputs 15
 ?> 
+<?php
+// $x = 5;
+// $y = 10;
+// // $GLOBALS[index] ==> can use globals this way as well
+// function myTest() {
+//   $GLOBALS['y'] = $GLOBALS['x'] + $GLOBALS['y'];
+// }
 
+// myTest();
+// echo $y; // outputs 15
+?> 
+<?php
+// function myTest() {
+//   // with static keyword the local variable can be used outside the 
+//   // function, it persists like the example here
+//   static $x = 0;
+//   echo "    x is ==> " . $x;
+//   $x++;
+// }
+// myTest();
+// myTest();
+// myTest();
+?> 
+<?php
+// echo "<h2>PHP is Fun!</h2>";
+// echo "Hello world!<br>";
+// echo "I'm about to learn PHP!<br>";
+// echo "This ", "string ", "was ", "made ", "with multiple parameters.";
+?>
+<?php
+// $txt1 = "Learn PHP";
+// $txt2 = "W3Schools.com";
+// $x = 5;
+// $y = 4;
 
-</body>
-</html> 
+// print "<h2>" . $txt1 . "</h2>";
+// print "Study PHP at " . $txt2 . "<br>";
+// print $x + $y;
+?> 
+<?php
+// $x = 5985;
+// $y = 10.365;
+// $z = false;
+// $cars = array("Volvo","BMW","Toyota");
+// var_dump($cars);
+// var_dump($x);
+// var_dump($y);
+// var_dump($z);
+?>
+<?php
+// class Car {
+//   public $color;
+//   public $model;
+//   public function __construct($color, $model) {
+//     $this->color = $color;
+//     $this->model = $model;
+//   }
+//   public function message() {
+//     return "My car is a " . $this->color . " " . $this->model . "!";
+//   }
+// }
+
+// $myCar = new Car("black", "Volvo");
+// echo $myCar -> message();
+// echo "<br>";
+// $myCar = new Car("red", "Toyota");
+// echo $myCar -> message();
+?> 
+<?php
+class Car {
+  public $color;
+  public $model;
+  public function __construct($color, $model) {
+    $this->color = $color;
+    $this->model = $model;
+  }
+  public function message() {
+    return "My car is a " . $this->color . " " . $this->model . "!";
+  }
+}
+$myCar = new Car("black", "Volvo");
+echo $myCar -> message();
+echo "<br>";
+$myCar = new Car("red", "Toyota");
+echo $myCar -> message();
+?> 
