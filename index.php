@@ -133,20 +133,54 @@ commented
 // echo $myCar -> message();
 ?> 
 <?php
-class Car {
-  public $color;
-  public $model;
-  public function __construct($color, $model) {
-    $this->color = $color;
-    $this->model = $model;
-  }
-  public function message() {
-    return "My car is a " . $this->color . " " . $this->model . "!";
-  }
-}
-$myCar = new Car("black", "Volvo");
-echo $myCar -> message();
-echo "<br>";
-$myCar = new Car("red", "Toyota");
-echo $myCar -> message();
+// class Car {
+//   public $color;
+//   public $model;
+//   public function __construct($color, $model) {
+//     $this->color = $color;
+//     $this->model = $model;
+//   }
+//   public function message() {
+//     return "My car is a " . $this->color . " " . $this->model . "!";
+//   }
+// }
+// $myCar = new Car("black", "Volvo");
+// echo $myCar -> message();
+// echo "<br>";
+// $myCar = new Car("red", "Toyota");
+// echo $myCar -> message();
+?> 
+<?php 
+// echo "length is ==> " . strlen("Hello world!");
+// echo "   word count is ==>  " . str_word_count("Hello world!");
+// echo "  now this is kewl ==>  " . strrev("Hello world!");
+// echo "  finds the index ==>  " . strpos("Hello world!", "world");
+?>
+<?php
+// echo str_replace("world", "Dolly", "Hello world!"); 
+// outputs Hello Dolly!
+?> 
+<?php
+// var_dump(is_int(45.55));
+// var_dump(PHP_FLOAT_MIN, PHP_FLOAT_MAX );
+// var_dump(is_int(PHP_FLOAT_MIN));
+// var_dump(is_infinite(1.9e411));
+// // string + integer doesn't throw an error, cool
+// var_dump("59.85" + 100);
+// var_dump(is_numeric("59.85" + 100));
+?>
+<?php
+// this is array in php
+// echo(min(0, 150, 30, 20, -8, -200));  // returns -200
+// echo(max(0, 150, 30, 20, -8, -200));  // returns 150
+// echo(abs(-6.7));  // returns 6.7
+// echo(sqrt(64));  // returns 8
+// to the closest integer
+// echo(round(0.60));  // returns 1
+// echo(round(0.49));  // returns 0
+
+// this is out of all the numbers, unlike js'
+// echo(rand());
+
+// echo(" & " . rand(10, 100));
 ?> 
