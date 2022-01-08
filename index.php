@@ -184,3 +184,105 @@ commented
 
 // echo(" & " . rand(10, 100));
 ?> 
+<?php
+// constants are defined like this, case sensitive too
+// constants are global can be used accross the script
+// define("GREETING", "Welcome to W3Schools.com!");
+// define("GREETING", "Welcome to W3Schools.com!", true);
+// echo GREETING;
+// function myTest() {
+//   echo GREETING;
+// }
+// myTest();
+
+// defining an array like this
+// define("cars", [
+//   "Alfa Romeo",
+//   "BMW",
+//   "Toyota"
+// ]);
+// echo cars[0];
+?> 
+<?php
+// <!-- Gonna write the interesting stuff i see in the docs here -->
+// <!-- 
+//   ++$x 	Pre-increment 	Increments $x by one, then returns $x
+//   $x++ 	Post-increment 	Returns $x, then increments $x by one 
+
+//   xor 	Xor 	$x xor $y 	True if either $x or $y is true, but not both
+
+//   . 	Concatenation 	$txt1 . $txt2 	Concatenation of $txt1 and $txt2
+//   .= 	Concatenation assignment 	$txt1 .= $txt2 	Appends $txt2 to $txt1
+
+// -->
+?>
+
+<?php
+// can check the equality and even the order
+// $x = array("a" => "red", "b" => "green");  
+// $y = array("a" => "red", "b" => "green");  
+// $y = array("b" => "green", "a" => "red" );  
+// $y = array("c" => "blue", "d" => "yellow");  
+// var_dump($x == $y);
+// var_dump($x === $y);
+?>  
+<?php
+// Ternary operator also exists here( ? : )
+// ?? 	Null coalescing 	$x = expr1 ?? expr2 	
+// Returns the value of $x.
+// The value of $x is expr1 if expr1 exists, and is not NULL.
+// If expr1 does not exist, or is NULL, the value of $x is expr2.
+// Introduced in PHP 7
+?>  
+
+<?php
+// $t = date("H");
+
+// if ($t < "20") {
+//   echo "Hour less than 20";
+// } elseif ("22" > $t && $t > "20") {
+//   echo "21";
+// }
+// else{
+//   echo "Else!";
+// }
+?> 
+
+<?php
+// Switch is very similar in javascript
+// $favcolor = "red";
+
+// switch ($favcolor) {
+//   case "red":
+//     echo "Your favorite color is red!";
+//     break;
+//   case "blue":
+//     echo "Your favorite color is blue!";
+//     break;
+//   case "green":
+//     echo "Your favorite color is green!";
+//     break;
+//   default:
+//     echo "Your favorite color is neither red, blue, nor green!";
+      // default doesn't take the break
+// }
+?> 
+
+<?php
+// LOOPS
+
+// while loop is also similar to the js'
+// $x = 1;
+// while($x <= 5) {
+//   echo "The number is: $x <br>";
+//   $x++;
+// }
+// echo "The number is: $x <br>";
+// do while executes the code once and then checks the condition
+// do {
+//   echo "The number is: $x <br>";
+//   $x++;
+// } while ($x <= 5);
+// echo "The number is: $x <br>";
+
+?> 
