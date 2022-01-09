@@ -284,5 +284,47 @@ commented
 //   $x++;
 // } while ($x <= 5);
 // echo "The number is: $x <br>";
+?> 
 
+<?php
+// the for loop is like the javascritp's for loop
+// for ($x = 0; $x <= 10; $x++) {
+//   echo "The number is: $x <br>";
+// }
+?> 
+<?php
+// foreach works in arrays
+// $colors = array("red", "green", "blue", "yellow");
+// foreach ($colors as $color) {
+//   echo "  $color  ";
+// }
+// arrays can take key value pairs
+// $age =array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+// foreach($age as $key => $val) {
+//   echo "$key = $val  ";
+// }
+?> 
+<?php
+// example usage of break and continue
+// for ($x = 0; $x < 10; $x++) {
+//   if ($x == 4) {
+//     continue;
+//   }elseif($x == 7){
+//     echo "The number is: $x  ";
+//     break;
+//   }
+// }
+?> 
+<?php
+// the argument looks like a variable
+// function familyName(int $fname) {
+//   echo "the name is $fname || ";
+// }
+// // familyName("Jani");
+// // familyName("Hege");
+// familyName(5);
+// // throws fatal error
+// familyName("Stale");
+// familyName("Kai Jim");
+// familyName("Borge");
 ?> 
