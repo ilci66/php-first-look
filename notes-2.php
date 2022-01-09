@@ -36,10 +36,10 @@
 // echo addNumbers(1.2, 5.2); 
 
 // the value changes with the usage of "&"
-function add_five(&$value) {
-  $value += 5;
-}
-$num = 2;
-add_five($num);
-echo "instead of 2 the num is " . $num;
+// function add_five(&$value) {
+//   $value += 5;
+// }
+// $num = 2;
+// add_five($num);
+// echo "instead of 2 the num is " . $num;
 ?>
