@@ -6,7 +6,10 @@
   <title>Document</title>
 </head>
 <body>
-  <form action="welcome.php" method="post">
+  <!-- <form action="welcome.php" method="post"> -->
+    <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF\']);?>">
+      <!-- the $_SERVER["PHP_SELF"] sends the submitted form data to the page itself, instead of jumping to a different page. This way, the user will get error messages on the same page as the form. -->
+      php self
     Name: <input type="text" name="name"><br>
     E-mail: <input type="text" name="email"><br>
     <input type="submit">
