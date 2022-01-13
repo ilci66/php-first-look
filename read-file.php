@@ -14,7 +14,7 @@
 // echo fgets($myfile);
 // fclose($myfile);
 ?> 
- <?php
+<?php
 $myfile = fopen("object-types.csv", "r") or die("Unable to open file!");
 // Output one line until end-of-file, it returns a boolean value cheking if the end of the file is reached
 while(!feof($myfile)) {
